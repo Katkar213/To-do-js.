@@ -175,7 +175,7 @@ font-size: 30px;
 
 .addpopup2{
     height:200px;
-   margin-top: 80px;
+   margin-top: -20px;
     width:350px;
     background-color: skyblue;
     border-radius: 10px;
@@ -194,6 +194,7 @@ font-size: 30px;
     font-size: 20px;
     background-color: rgb(254, 170, 13);
     color:white;
+    margin: 10px;
 }
 .btndiv2{
     margin-top: 20px;
@@ -214,6 +215,7 @@ font-size: 30px;
     margin-top: 20px;
      position: relative;
      display:none;
+     justify-content: center;
 }
 
 

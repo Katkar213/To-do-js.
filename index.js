@@ -145,10 +145,10 @@ addbtn2.addEventListener(("click"),()=>{
 
     Title.addEventListener("click",()=>{
        parentcard.style.display="none";
-       parentCard2.style.display="block";
        parentCard2.appendChild(newCard);
-       newCard.style.position="relative";
-       newCard.style.left="40%";
+       parentCard2.style.display="flex";
+    //    newCard.style.position="relative";
+    //    newCard.style.left="40%";
        header2[0].style.display="block";
        header1.style.display="none";
        blank.innerText=Title.innerText;
@@ -164,7 +164,8 @@ addbtn2.addEventListener(("click"),()=>{
     function Backbutton(){ 
         console.log("hello2");
         parentCard2.style.display = "none";
-        parentCard2.removeChild(newCard);
+        // parentCard2.removeChild(newCard);    change done
+        parentCard2.innerText="";
         parentcard.appendChild(newCard);
         parentcard.style.display = "flex";
         parentcard.style.flexDirection = "row";
@@ -192,22 +193,6 @@ addbtn2.addEventListener(("click"),()=>{
 
 
 // })
-
-
-
-
-
-
-
-
-
-
-// adding subtitle and mark done button.
-
-
-
-
-
 
 
 
