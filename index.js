@@ -122,21 +122,21 @@ addbtn2.addEventListener(("click"),()=>{
     
         Add2.addEventListener("click", () => {
           title2.innerText = input3.value;
+          var markdone = document.createElement("button");
+          newCard.append(markdone);
+          markdone.innerText = "x";
           addpopup2.style.display = "none";
           parentcard.classList.remove("parent");
           parent.classList.remove("parent");
-          var markdone = document.createElement("button");
-        //   newCard.append(markdone);
-        //   markdone.innerText = "x";
-        //   markdone.style.marginLeft = "10px";
+          
+          markdone.style.marginLeft = "-40px";
         //   markdone.classList.add("inline");
         });
+
         close2.addEventListener("click", () => {
-            addpopup2.remove();
+          addpopup2.remove();
           parentcard.classList.remove("parent");
           parent.classList.remove("parent");
-
-
         });
       }
       deletebutton.addEventListener(("click"),()=>{
