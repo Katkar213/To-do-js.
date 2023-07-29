@@ -121,17 +121,62 @@ addbtn2.addEventListener(("click"),()=>{
         addpopup2.appendChild(close2);
     
         Add2.addEventListener("click", () => {
+            const para=document.createElement("p");
+            para.classList.add("inline");
           title2.innerText = input3.value;
-          var markdone = document.createElement("button");
-          newCard.append(markdone);
-          markdone.innerText = "x";
+          addpopup2.style.display = "none";
+          const markingDone = document.createElement("button");
+         
+          innerdiv.appendChild(para)
+          innerdiv.classList.add("space")
+          
+          markingDone.innerText = "x";
+          para.appendChild(title2);
+          para.appendChild(markingDone);
           addpopup2.style.display = "none";
           parentcard.classList.remove("parent");
           parent.classList.remove("parent");
-          
-          markdone.style.marginLeft = "-40px";
-        //   markdone.classList.add("inline");
+          markingDone.classList.add("mark");
+          parent.classList.remove("first");
+    
+         
+        markingDone.addEventListener("click", () => {
+  Done();
+ });
+function Done() {
+  title2.style.textDecoration = "line-through";
+  title2.style.color = "red";
+   title2.style.fontWeight = "bolder";
+   markingDone.remove();
+ }
         });
+
+
+
+        // const p = document.createElement("p");
+// // p.style.displayInline = "block";
+// p.classList.add("inline");
+// tittle2.innerText = input3.value;
+// dropdown2.style.display = "none";
+// var markdone = document.createElement("button");
+
+// itemlist_start.appendChild(p);
+// itemlist_start.classList.add("space");
+// markdone.innerText = "Done";
+// p.appendChild(tittle2);
+// p.appendChild(markdone);
+// markdone.classList.add("mark");
+// flexbox.classList.remove("first");
+// markdone.addEventListener("click", () => {
+//   Done();
+// });
+// function Done() {
+//   tittle2.style.textDecoration = "line-through";
+//   tittle2.style.color = "red";
+//   tittle2.style.fontWeight = "bolder";
+//   markdone.remove();
+// }
+
 
         close2.addEventListener("click", () => {
           addpopup2.remove();
@@ -147,13 +192,10 @@ addbtn2.addEventListener(("click"),()=>{
        parentcard.style.display="none";
        parentCard2.appendChild(newCard);
        parentCard2.style.display="flex";
-    //    newCard.style.position="relative";
-    //    newCard.style.left="40%";
        header2[0].style.display="block";
        header1.style.display="none";
        blank.innerText=Title.innerText;
-    // console.log(Title.innerText);
-    blank.style.color="yellow";
+       blank.style.color="yellow";
     })
 
 
@@ -204,3 +246,6 @@ function remove(){
 
 
 }
+
+
+
