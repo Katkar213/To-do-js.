@@ -1,19 +1,28 @@
 body{
-    background-color:black;
+   
     overflow-x: hidden;
+    background-image: url(./10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 
 }
 /* page 1 */
 h1{
     color:white;
     font-family: 'Open Sans', sans-serif;
+    text-shadow: 4px 4px 4px red;
 }
 h1 span{
     font-weight: 100;
     
 }
+h2{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
 header{
-    border:2px solid red;
+
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
@@ -22,16 +31,16 @@ header{
 }
 .initial{
     font-family: 'Open Sans', sans-serif;
-    font-weight:100;
+    font-weight:100px;
     position: relative;
     left:100px;
-    
+    text-shadow: 4px 4px 4px yellow;
 }
 
 .btn{
-    background-color: black;
+   background-color: transparent;
     font:white;
-    border: 2px solid white;
+    border: none;
     border-radius: 10px;
     padding: 5px;
 }
@@ -39,6 +48,10 @@ header{
     
     display:inline-block;
     color: white;
+    height:30px;
+    width:30px;
+    background-color: blue;
+    border-radius: 50%;
     font-size: 28px;
     
 }
@@ -49,15 +62,17 @@ p{
     position: relative;
     left: 5px;
     margin-top:-5px;
-    font-size:20px;
+    font-size:26px;
 
 }
 .addtask{
     
     width:auto;
-    background-color: black;
+    height: 40px;
+    /* background: linear-gradient(yellow,orange); */
+    background-color: transparent;
     font:white;
-    border-radius: 30px;
+    border-radius: 50;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -67,26 +82,16 @@ p{
 }
 .task2{
   margin-top: -42px;
-    
-  
+
 }
 
 span{
     font-size: 32px;
 }
 
-.fa-circle-plus{
-color:blue;
-text-align:centre;
-margin-top:27px;
-font-size: 30px;
-}
-
  .parent{
     filter:blur(10px);
 } 
-
-
 /* page 2 */
 
 /* Adding first popup */
@@ -94,12 +99,13 @@ font-size: 30px;
 
 .addpopup{
     height:200px;
-   margin-top: -50px;
+   margin-top: 0px;
     width:350px;
-    background-color: white;
     border-radius: 10px;
     text-align: center;
     position: fixed;
+    background-image: url(./flash.jpg);
+    background-size: cover;
     z-index:10;
     left:30%;
     display:none;
@@ -124,29 +130,9 @@ font-size: 30px;
     gap:30px;
     justify-content: center;
 }
-.delete{
-    background-image: url(./delete.png);
-    background-size: cover;
-    width:30px;
-    height:30px;
-    border:none;
-    outline: none;
-    border-radius: 50%;
-    position: relative;
-    margin-left: 30px;
-    margin-top: 5vw;
- }
- .add1{
-    background-image: url(./Add.png);
-    background-size: cover;
-    width:30px;
-    height:30px;
-    border:none;
-    outline: none;
-    border-radius: 50%;
- }
+
 .parent2{
-    border:1px solid red;
+   
    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -157,8 +143,29 @@ font-size: 30px;
 .btnposition{
     position:relative;
     left:40%;
+    margin: 5px;
   
 }
+.delete{
+    background-image: url(./delete.jpeg);
+    background-size: cover;
+    width:30px;
+    height:30px;
+    border:none;
+    outline: none;
+    border-radius: 50%;
+
+   
+ }
+ .add{
+    background-image: url(./Add.jpeg);
+    background-size: cover;
+    width:30px;
+    height:30px;
+    border:none;
+    outline: none;
+    border-radius: 50%;
+ }
 .inline{
     display:inline-block;
 }
@@ -179,11 +186,18 @@ font-size: 30px;
     display:inline-block;
 } */
 .newtask{
-    /* position: relative; */
-    background-color: brown;
-    min-height:220px;
-    width:200px;
+    
+    background-image:url(./deadpool.jpg);
+    background-size: cover;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background-position: center;
+    min-height:280px;
+    width:220px;
     border-radius: 10px;
+}
+.newtask:hover{
+    transform: scale(1.1);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 /* Second popup box */
@@ -194,8 +208,9 @@ font-size: 30px;
    width:260px;
    left:40vw;
    top:140px;
+   background-image: url(./face.jpg);
+   background-size:cover ;
    padding: 15px;
-   background-color: skyblue;
    border-radius: 15px;
    display: none;
    text-align: center;
@@ -242,7 +257,6 @@ font-size: 30px;
 
 /* second parents */
 #parentCard2{
-    border:1px solid yellow;
     margin-top: 20px;
      position: relative;
      display:none;
@@ -269,9 +283,17 @@ font-size: 30px;
    
    
 }
+img{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+}
 #back{
     margin-top: 45px;
-   color:white;
+   background-size: cover;
+   height:30px;
+   color: aqua;
+   border-radius: 50%;
    font-size: 35px;
    width:30px;
    margin-left: 20px;
@@ -282,6 +304,12 @@ font-size: 30px;
 /* mobile View......... */
 
 @media screen and (min-width:280px) and (max-width:600px){
+   body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-repeat: repeat;
+   }
+   
     header{
         gap:20px;
     }
@@ -332,6 +360,15 @@ font-size: 30px;
         margin: 10px;
     }
 
+    .btn1{
+        height:40px;
+        width:60px;
+    }
+    #parentCard2{
+
+         align-items: center;
+    }
+
 }
 
 
@@ -342,14 +379,18 @@ font-size: 30px;
 
 @media screen and (min-width:620px) and (max-width:900px){
 
-
+    body{
+        overflow-x: hidden;
+        background-repeat: repeat;
+       }
+       
    
     .parent2{
         width:91vw;
     }
     header{
         gap:400px;
-        width:93vw;
+        width:90vw;
 
     }
     .initial{
@@ -411,7 +452,6 @@ font-size: 30px;
 .addtask{
     
     width:auto;
-    background-color:green;
     font:white;
     border-radius: 30px;
     display: flex;
@@ -421,6 +461,11 @@ font-size: 30px;
 }
 #parentCard2{
   width:90vw;
+}
+
+.btn1{
+    height:40px;
+    width:90px;
 }
     
 }

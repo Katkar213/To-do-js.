@@ -3,7 +3,7 @@ let parent=document.getElementById("parent1");
 let addpopup=document.getElementsByClassName("addpopup");
 
 let count=0;
-
+let body=document.querySelector("body");
 
 function addnewtask(){
     parent.setAttribute("class","parent");
@@ -20,7 +20,7 @@ function addnewtask(){
 
 let input=document.querySelector("#input");
 let parentcard=document.createElement("div");
-let body=document.querySelector("body");
+
 body.appendChild(parentcard);
 let parentCard2=document.getElementById("parentCard2");
 let header2=document.getElementsByClassName("header2");
@@ -54,17 +54,15 @@ parentcard.setAttribute("id","show");
 
    let Title=document.createElement("h1");
    Title.innerText=input.value;
-   Title.style.color="yellow";
+   Title.style.color="white";
    Title.style.marginLeft="40%";
 
    let heading=document.createElement("hr");
    let innerdiv=document.createElement("div");
    let addbtn2=document.createElement("button");
    let deletebutton=document.createElement("button");
-   addbtn2.innerText="Add";
    addbtn2.classList.add("btnposition");
-   addbtn2.classList.add("add1");
-   deletebutton.innerText="Delete";
+   addbtn2.classList.add("add");
    deletebutton.classList.add("btnposition");
    deletebutton.classList.add("delete");
 
