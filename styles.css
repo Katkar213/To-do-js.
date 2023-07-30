@@ -124,6 +124,27 @@ font-size: 30px;
     gap:30px;
     justify-content: center;
 }
+.delete{
+    background-image: url(./delete.png);
+    background-size: cover;
+    width:30px;
+    height:30px;
+    border:none;
+    outline: none;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 5vw;
+ }
+ .add1{
+    background-image: url(./Add.png);
+    background-size: cover;
+    width:30px;
+    height:30px;
+    border:none;
+    outline: none;
+    border-radius: 50%;
+ }
 .parent2{
     border:1px solid red;
    margin-top: 20px;
@@ -160,7 +181,7 @@ font-size: 30px;
 .newtask{
     /* position: relative; */
     background-color: brown;
-    height:200px;
+    min-height:220px;
     width:200px;
     border-radius: 10px;
 }
@@ -256,22 +277,150 @@ font-size: 30px;
    margin-left: 20px;
 }
 
-/* .header2{
-    border:2px solid green;
-    height:70px;
-    display:flex;
-    gap:60px;
-    justify-content: space-evenly;
-    display:none;
+
+
+/* mobile View......... */
+
+@media screen and (min-width:280px) and (max-width:600px){
+    header{
+        gap:20px;
+    }
+    .initial{
+        
+        left:0px;
+    }
+    .addpopup{
+        position: fixed;
+        height:160px;
+        width:210px;
+        left:20vw;
+        top:140px;
+         
+        background-color: skyblue;
+        border-radius: 15px;
+    }
+    #input{
+        width:180px;
+    }
+    div h2{
+        font-size: 19px;
+    }
+    .btndiv{
+      gap:5px;
+    }
+
+    .addpopup2{
+        position: fixed;
+        height:160px;
+        width:210px;
+        left:20vw;
+        top:140px;
+        background-color: skyblue;
+        border-radius: 15px;
+        display: none;
+        text-align: center;
+        border-color: orange; 
+     }
+
+     .btn2{
+        border-radius: 20px;
+        height:40px;
+        width:70px;
+        font-size: 20px;
+        background-color: rgb(254, 170, 13);
+        color:white;
+        margin: 10px;
+    }
+
 }
 
-#back{
-    color:white;
-    font-size:30px ;
-}
-#blank{
-    font-size: 48px;
-    margin-top: -30px;
-    width:120px;
+
+
+
+
+/* Tab view............. */
+
+@media screen and (min-width:620px) and (max-width:900px){
+
+
    
-} */
+    .parent2{
+        width:91vw;
+    }
+    header{
+        gap:400px;
+        width:93vw;
+
+    }
+    .initial{
+        
+        left:0px;
+    }
+    .addpopup{
+        position: fixed;
+        height:160px;
+        width:210px;
+        left:40vw;
+        top:190px;
+         background-color: skyblue;
+        border-radius: 15px;
+    }
+    #input{
+        width:180px;
+    }
+    div h2{
+        font-size: 19px;
+    }
+    .btndiv{
+       gap:5px;
+    }
+
+    .addpopup2{
+        position: fixed;
+        height:160px;
+        width:210px;
+        left:40vw;
+        top:170px;
+        background-color: skyblue;
+        border-radius: 15px;
+        display: none;
+        text-align: center;
+        border-color: orange; 
+     }
+
+     .btn2{
+        border-radius: 20px;
+        height:40px;
+        width:70px;
+        font-size: 20px;
+        background-color: rgb(254, 170, 13);
+        color:white;
+        margin: 10px;
+    }
+
+    
+.header2{
+    display: flex;
+    height: 60px;
+    width:60vh;
+    display: none;
+    margin-top: 40px;
+   justify-content: space-between;
+   gap:10px;
+}
+.addtask{
+    
+    width:auto;
+    background-color:green;
+    font:white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+   
+}
+#parentCard2{
+  width:90vw;
+}
+    
+}

@@ -55,7 +55,7 @@ parentcard.setAttribute("id","show");
    let Title=document.createElement("h1");
    Title.innerText=input.value;
    Title.style.color="yellow";
-   Title.style.marginLeft="30%";
+   Title.style.marginLeft="40%";
 
    let heading=document.createElement("hr");
    let innerdiv=document.createElement("div");
@@ -63,8 +63,10 @@ parentcard.setAttribute("id","show");
    let deletebutton=document.createElement("button");
    addbtn2.innerText="Add";
    addbtn2.classList.add("btnposition");
+   addbtn2.classList.add("add1");
    deletebutton.innerText="Delete";
    deletebutton.classList.add("btnposition");
+   deletebutton.classList.add("delete");
 
 //newCard.appendChild("")
 
@@ -93,9 +95,11 @@ addbtn2.addEventListener(("click"),()=>{
     let title2=document.createElement("h3");
     innerdiv.appendChild(title2);
   
-    
+     // creating second pop up (addpopup2)
+
         let body = document.querySelector("body");
         let addpopup2 = document.createElement("div");
+
         addpopup2.classList.add("addpopup2");
         addpopup2.style.display = "block";
         let tittle3 = document.createElement("h2");
@@ -130,7 +134,7 @@ addbtn2.addEventListener(("click"),()=>{
           innerdiv.appendChild(para)
           innerdiv.classList.add("space")
           
-          markingDone.innerText = "x";
+          markingDone.innerText = "Done";
           para.appendChild(title2);
           para.appendChild(markingDone);
           addpopup2.style.display = "none";
@@ -150,32 +154,6 @@ function Done() {
    markingDone.remove();
  }
         });
-
-
-
-        // const p = document.createElement("p");
-// // p.style.displayInline = "block";
-// p.classList.add("inline");
-// tittle2.innerText = input3.value;
-// dropdown2.style.display = "none";
-// var markdone = document.createElement("button");
-
-// itemlist_start.appendChild(p);
-// itemlist_start.classList.add("space");
-// markdone.innerText = "Done";
-// p.appendChild(tittle2);
-// p.appendChild(markdone);
-// markdone.classList.add("mark");
-// flexbox.classList.remove("first");
-// markdone.addEventListener("click", () => {
-//   Done();
-// });
-// function Done() {
-//   tittle2.style.textDecoration = "line-through";
-//   tittle2.style.color = "red";
-//   tittle2.style.fontWeight = "bolder";
-//   markdone.remove();
-// }
 
 
         close2.addEventListener("click", () => {
@@ -219,22 +197,6 @@ function Done() {
     }
     }
 
-
-
-// creating second popup box
-
-
-
-
-
-
-// closebutton2[0].addEventListener("click",()=>{
-//     addpopup2[0].style.display="none";
-//     parent.classList.remove("parent");
-//     parentcard.classList.remove("parent");
-
-
-// })
 
 
 
