@@ -1,6 +1,8 @@
 
 let parent=document.getElementById("parent1");
 let addpopup=document.getElementsByClassName("addpopup");
+let parentCard2=document.getElementById("parentCard2");
+let header2=document.getElementsByClassName("header2");
 
 let count=0;
 let body=document.querySelector("body");
@@ -10,6 +12,8 @@ function addnewtask(){
     console.log("hii");
     addpopup[0].classList.add("show");
     console.log("hii2");
+    parentCard2.classList.add("parent");
+    header2[0].classList.add("parent");
 
     if(count>=1){
         parentcard.classList.add("parent");
@@ -22,8 +26,7 @@ let input=document.querySelector("#input");
 let parentcard=document.createElement("div");
 
 body.appendChild(parentcard);
-let parentCard2=document.getElementById("parentCard2");
-let header2=document.getElementsByClassName("header2");
+
 let blank=document.getElementById("blank");
 const back1=document.getElementById("back");
 let header1=document.querySelector("header");
@@ -46,6 +49,7 @@ parent.classList.remove("parent");
 parentcard.classList.remove("parent");
 parentcard.classList.add("parent2");
 parentcard.setAttribute("id","show");
+parentcard.classList.add("width");
 
 
 // Creating card and connecting classes
@@ -65,6 +69,8 @@ parentcard.setAttribute("id","show");
    addbtn2.classList.add("add");
    deletebutton.classList.add("btnposition");
    deletebutton.classList.add("delete");
+   header2[0].classList.remove("parent");
+   parentCard2.classList.remove("parent");
 
 //newCard.appendChild("")
 
@@ -84,6 +90,8 @@ addbtn2.addEventListener(("click"),()=>{
     parentcard.classList.add("parent");
     createItempopup(innerdiv);
     newCard.style.height="auto";
+    header2[0].classList.add("parent");
+    parentCard2.classList.add("parent");
 
 
  })
@@ -139,18 +147,21 @@ addbtn2.addEventListener(("click"),()=>{
           parentcard.classList.remove("parent");
           parent.classList.remove("parent");
           markingDone.classList.add("mark");
-          parent.classList.remove("first");
-    
+          parent.classList.remove("parent");
+          header1.classList.remove("parent");
+          parentcard.classList.remove("parent");
+          header2[0].classList.remove("parent");
+          parentCard2.classList.remove("parent");
          
         markingDone.addEventListener("click", () => {
-  Done();
- });
-function Done() {
-  title2.style.textDecoration = "line-through";
-  title2.style.color = "red";
-   title2.style.fontWeight = "bolder";
-   markingDone.remove();
- }
+             Done();
+        });
+      function Done() {
+        title2.style.textDecoration = "line-through";
+        title2.style.color = "red";
+        title2.style.fontWeight = "bolder";
+    markingDone.remove();
+        }
         });
 
 
@@ -158,6 +169,10 @@ function Done() {
           addpopup2.remove();
           parentcard.classList.remove("parent");
           parent.classList.remove("parent");
+         header1.classList.remove("parent");
+         header2[0].classList.remove("parent");
+         parentCard2.classList.remove("parent");
+
         });
       }
       deletebutton.addEventListener(("click"),()=>{
@@ -170,6 +185,8 @@ function Done() {
        parentCard2.style.display="flex";
        header2[0].style.display="block";
        header1.style.display="none";
+       header2[0].classList.remove("parent");
+       parentCard2.classList.remove("parent");
        blank.innerText=Title.innerText;
        blank.style.color="yellow";
     })
@@ -203,6 +220,8 @@ function remove(){
     addpopup[0].setAttribute("class","addpopup hide");
     parent.classList.remove("parent");
     parentcard.classList.remove("parent");
+    header2[0].classList.remove("parent");
+    parentCard2.classList.remove("parent");
 
 
 }
