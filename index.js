@@ -3,10 +3,12 @@ let parent=document.getElementById("parent1");
 let addpopup=document.getElementsByClassName("addpopup");
 let parentCard2=document.getElementById("parentCard2");
 let header2=document.getElementsByClassName("header2");
+let parentcard=document.createElement("div");
 
 let count=0;
 let body=document.querySelector("body");
 
+// Add item plus icon.............
 function addnewtask(){
     parent.setAttribute("class","parent");
     console.log("hii");
@@ -14,25 +16,24 @@ function addnewtask(){
     console.log("hii2");
     parentCard2.classList.add("parent");
     header2[0].classList.add("parent");
-
+    
     if(count>=1){
         parentcard.classList.add("parent");
     }
 }
-
-// page 2
-
 let input=document.querySelector("#input");
-let parentcard=document.createElement("div");
 
+//Appending flex container 1 to body..............
 body.appendChild(parentcard);
 
+
+let header1=document.querySelector("header");
 let blank=document.getElementById("blank");
 const back1=document.getElementById("back");
-let header1=document.querySelector("header");
 
 
-// adding child cards
+
+// popup 1 add button
 
 function add(){
     // pop up box removed
@@ -45,7 +46,7 @@ parent.classList.remove("parent");
    let noItemHeading=document.getElementsByClassName("initial");
    noItemHeading[0].style.display="none"; 
 
-// creating flex container
+// creating flex container 1
 parentcard.classList.remove("parent");
 parentcard.classList.add("parent2");
 parentcard.setAttribute("id","show");
@@ -177,12 +178,16 @@ addbtn2.addEventListener(("click"),()=>{
       }
       deletebutton.addEventListener(("click"),()=>{
         newCard.remove();
+           blank.innerText=" "
         console.log(parentcard.childNodes);
         if (parentcard.childNodes.length === 0) {
             console.log("i am in");
             noItemHeading[0].style.display="block"; 
           } 
         else {
+            noItemHeading[0].style.display="none"; 
+          }
+          if(parentCard2.childNode===1){
             noItemHeading[0].style.display="none"; 
           }
     })
@@ -202,6 +207,14 @@ addbtn2.addEventListener(("click"),()=>{
 
     back1.addEventListener("click",()=>{
        Backbutton();
+      if (parentcard.childNodes.length === 0) {
+       console.log("i am in");
+        noItemHeading[0].style.display="block"; 
+      } 
+    else {
+        noItemHeading[0].style.display="none"; 
+      }
+
     })
 
     function Backbutton(){ 

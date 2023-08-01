@@ -23,7 +23,6 @@ h2{
     text-shadow: 1px 1px 1px black;
 }
 header{
-  /* border: 2px solid red; */
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
@@ -32,7 +31,7 @@ header{
 }
 .initial{
     font-family: 'Open Sans', sans-serif;
-    font-weight:100px;
+    font-weight:bolder;
     position: relative;
     left:100px;
     text-shadow: 4px 4px 4px yellow;
@@ -70,7 +69,6 @@ p{
     
     width:auto;
     height: 40px;
-    /* background: linear-gradient(yellow,orange); */
     background-color: transparent;
     font:white;
     border-radius: 50;
@@ -82,7 +80,7 @@ p{
     
 }
 .task2{
-  margin-top: -42px;
+   margin-top: -40px;
 
 }
 
@@ -140,8 +138,8 @@ span{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-between;
-    gap:80px;
-    /* border: 2px solid red; */
+    gap:60px;
+  
 }
 .btnposition{
     position:relative;
@@ -260,7 +258,7 @@ span{
 /* second parent div */
 
 #parentCard2{
-    margin-top: 20px;
+    margin-top: 60px;
      position: relative;
      display:none;
      justify-content: center;
@@ -281,10 +279,12 @@ span{
  
 }
 #blank{
-    margin-top: -50px;
+    margin-top: -30px;
    text-align: center;
    font-size: 48px;
    color:yellow;
+   display: inline-block;
+   margin-left: 45vw;
   
 }
 img{
@@ -371,12 +371,13 @@ img{
 
          align-items: center;
     }
+    .parent2{
+        margin-left: 20vw;
+      
+    }
 
 }
-.parent2{
-    margin-left: 20vw;
-    flex-direction: column;
-}
+
 
 
 
