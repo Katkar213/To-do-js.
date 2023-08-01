@@ -395,7 +395,7 @@ img{
        }
        
     .parent2{
-        /* width:40vw; */
+       
         margin-left: 35%;
     }
     header{
@@ -477,5 +477,10 @@ img{
     height:40px;
     width:90px;
 }
-    
+ 
+
+.parent2{
+    margin-left: 10vw;
+    flex-direction: column;
+}
 }
