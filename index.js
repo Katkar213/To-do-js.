@@ -43,7 +43,7 @@ parent.classList.remove("parent");
 
 // // Initial heading removed
    let noItemHeading=document.getElementsByClassName("initial");
-   noItemHeading[0].classList.add("hide"); 
+   noItemHeading[0].style.display="none"; 
 
 // creating flex container
 parentcard.classList.remove("parent");
@@ -177,6 +177,14 @@ addbtn2.addEventListener(("click"),()=>{
       }
       deletebutton.addEventListener(("click"),()=>{
         newCard.remove();
+        console.log(parentcard.childNodes);
+        if (parentcard.childNodes.length === 0) {
+            console.log("i am in");
+            noItemHeading[0].style.display="block"; 
+          } 
+        else {
+            noItemHeading[0].style.display="none"; 
+          }
     })
 
     Title.addEventListener("click",()=>{
