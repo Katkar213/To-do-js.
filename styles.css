@@ -310,7 +310,6 @@ img{
 @media screen and (min-width:280px) and (max-width:600px){
    body{
     overflow-x: hidden;
-    overflow-y: scroll;
     background-repeat: repeat;
    }
    

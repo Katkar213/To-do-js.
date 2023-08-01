@@ -158,7 +158,7 @@ addbtn2.addEventListener(("click"),()=>{
         });
       function Done() {
         title2.style.textDecoration = "line-through";
-        title2.style.color = "red";
+        title2.style.color = "yellow";
         title2.style.fontWeight = "bolder";
     markingDone.remove();
         }
