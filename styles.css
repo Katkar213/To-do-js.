@@ -17,6 +17,7 @@ h1{
 h1 span{
     font-weight: 100;
     
+
 }
 h2{
     color: white;
@@ -155,6 +156,8 @@ span{
     border:none;
     outline: none;
     border-radius: 50%;
+    margin-top: 19vh;
+    margin-bottom: 2vh;
 
    
  }
@@ -166,6 +169,8 @@ span{
     border:none;
     outline: none;
     border-radius: 50%;
+    margin-top:19vh;
+    margin-bottom: 2vh;
  }
 
 .inline{
@@ -372,9 +377,15 @@ img{
          align-items: center;
     }
     .parent2{
+        flex-direction: row;
         margin-left: 20vw;
+        
       
     }
+.newtask{
+    width:84vw;
+    margin-left: -12vw;
+}
 
 }
 
@@ -394,13 +405,9 @@ img{
         position: fixed;
        }
        
-    .parent2{
-       
-        margin-left: 35%;
-    }
     header{
         gap:200px;
-        width:92vw;
+        width:99vw;
 
     }
     .initial{
@@ -409,15 +416,15 @@ img{
     }
     .addpopup{
         position: fixed;
-        height:160px;
-        width:210px;
-        left:40vw;
+        height:190px;
+        width:320px;
+        left:30vw;
         top:190px;
          background-color: skyblue;
         border-radius: 15px;
     }
     #input{
-        width:180px;
+        width:290px;
     }
     div h2{
         font-size: 19px;
@@ -437,6 +444,10 @@ img{
         display: none;
         text-align: center;
         border-color: orange; 
+     }
+     .btn1{
+        width:120px;
+        margin: 10px;
      }
 
      .btn2{
@@ -481,6 +492,9 @@ img{
 
 .parent2{
     margin-left: 0vw;
-    flex-direction: column;
+   column-gap:80px;
+    
+}.newtask{
+    width:40vw;
 }
 }

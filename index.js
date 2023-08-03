@@ -54,7 +54,7 @@ parentcard.setAttribute("id","show");
 parentcard.classList.add("width");
 
 
-// Creating card and connecting classes
+// Creating new card by js..........
    let newCard= document.createElement("div");
    newCard.classList.add("newtask");
 
