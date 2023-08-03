@@ -8,6 +8,7 @@ let parentcard=document.createElement("div");
 let count=0;
 let body=document.querySelector("body");
 
+
 // Add item plus icon.............
 function addnewtask(){
     parent.setAttribute("class","parent");
@@ -26,23 +27,23 @@ let input=document.querySelector("#input");
 //Appending flex container 1 to body..............
 body.appendChild(parentcard);
 
-
+// header 1..................
 let header1=document.querySelector("header");
+
+// header 2 elements.............
 let blank=document.getElementById("blank");
 const back1=document.getElementById("back");
 
-
-
-// popup 1 add button
-
+// popup 1 add button..............
 function add(){
-    // pop up box removed
+    
+// pop up box removed
 let addpopup=document.getElementsByClassName("addpopup");
 addpopup[0].setAttribute("class","addpopup hide");
 count++;
 parent.classList.remove("parent");
 
-// // Initial heading removed
+//no item in list removed....
    let noItemHeading=document.getElementsByClassName("initial");
    noItemHeading[0].style.display="none"; 
 
@@ -58,18 +59,18 @@ parentcard.classList.add("width");
    newCard.classList.add("newtask");
 
    let Title=document.createElement("h1");
-   Title.innerText=input.value;
-   Title.style.color="white";
-   Title.style.marginLeft="40%";
+     Title.innerText=input.value;
+     Title.style.color="white";
+     Title.style.marginLeft="40%";
 
    let heading=document.createElement("hr");
    let innerdiv=document.createElement("div");
    let addbtn2=document.createElement("button");
+     addbtn2.classList.add("btnposition");
+     addbtn2.classList.add("add");
    let deletebutton=document.createElement("button");
-   addbtn2.classList.add("btnposition");
-   addbtn2.classList.add("add");
-   deletebutton.classList.add("btnposition");
-   deletebutton.classList.add("delete");
+     deletebutton.classList.add("btnposition");
+     deletebutton.classList.add("delete");
    header2[0].classList.remove("parent");
    parentCard2.classList.remove("parent");
 
@@ -100,7 +101,7 @@ addbtn2.addEventListener(("click"),()=>{
 
  function createItempopup(innerdiv){
     let title2=document.createElement("h3");
-    innerdiv.appendChild(title2);
+       innerdiv.appendChild(title2);
   
      // creating second pop up (addpopup2)
 
@@ -177,7 +178,7 @@ addbtn2.addEventListener(("click"),()=>{
         });
       }
       deletebutton.addEventListener(("click"),()=>{
-        newCard.remove();
+        newCard.style.display="none";
            blank.innerText=" "
         console.log(parentcard.childNodes);
         if (parentcard.childNodes.length === 0) {
@@ -187,7 +188,7 @@ addbtn2.addEventListener(("click"),()=>{
         else {
             noItemHeading[0].style.display="none"; 
           }
-          if(parentCard2.childNode===1){
+          if(parentCard2.childNodes.length===1){
             noItemHeading[0].style.display="none"; 
           }
     })
