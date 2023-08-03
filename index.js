@@ -178,6 +178,7 @@ addbtn2.addEventListener(("click"),()=>{
         });
       }
       deletebutton.addEventListener(("click"),()=>{
+      //  newCard.remove();
         newCard.style.display="none";
            blank.innerText=" "
         console.log(parentcard.childNodes);
