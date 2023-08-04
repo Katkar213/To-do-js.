@@ -60,8 +60,9 @@ parentcard.classList.add("width");
 
    let Title=document.createElement("h1");
      Title.innerText=input.value;
-     Title.style.color="white";
-     Title.style.marginLeft="40%";
+     Title.style.color="black";
+    //  Title.style.marginLeft="40%";
+     Title.classList.add("head")
 
    let heading=document.createElement("hr");
    let innerdiv=document.createElement("div");
@@ -91,7 +92,7 @@ addbtn2.addEventListener(("click"),()=>{
     parent.setAttribute("class","parent");
     parentcard.classList.add("parent");
     createItempopup(innerdiv);
-    // newCard.style.height="auto";
+   
     header2[0].classList.add("parent");
     parentCard2.classList.add("parent");
 
@@ -101,6 +102,7 @@ addbtn2.addEventListener(("click"),()=>{
 
  function createItempopup(innerdiv){
     let title2=document.createElement("h3");
+    title2.style.color="black"
        innerdiv.appendChild(title2);
   
      // creating second pop up (addpopup2)
@@ -160,7 +162,7 @@ addbtn2.addEventListener(("click"),()=>{
         });
       function Done() {
         title2.style.textDecoration = "line-through";
-        title2.style.color = "yellow";
+        title2.style.color = "red";
         title2.style.fontWeight = "bolder";
     markingDone.remove();
         }

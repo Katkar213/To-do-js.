@@ -10,7 +10,7 @@ body{
 }
 /* page 1 */
 h1{
-    color:white;
+    color:yellow;
     font-family: 'Open Sans', sans-serif;
     text-shadow: 4px 4px 4px red;
 }
@@ -148,6 +148,18 @@ span{
     margin: 5px;
   
 }
+.div1{
+    width:auto;
+    border:2px solid yellow;
+    height:auto;
+}
+
+.head{
+    word-wrap: break-word;
+    text-align:center;
+    color: black;
+
+}
 .delete{
     background-image: url(./delete.jpeg);
     background-size: cover;
@@ -175,6 +187,7 @@ span{
 
 .inline{
     display:inline-block;
+    word-wrap: break-word;
 }
 .hide{
     display: none;
@@ -190,8 +203,8 @@ span{
 }
 
 .newtask{
-    
-    background-image:url(./deadpool.jpg);
+    background-color: white;
+    color: black;
     background-size: cover;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     background-position: center;
