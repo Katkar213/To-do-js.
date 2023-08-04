@@ -91,7 +91,7 @@ addbtn2.addEventListener(("click"),()=>{
     parent.setAttribute("class","parent");
     parentcard.classList.add("parent");
     createItempopup(innerdiv);
-    newCard.style.height="auto";
+    // newCard.style.height="auto";
     header2[0].classList.add("parent");
     parentCard2.classList.add("parent");
 
