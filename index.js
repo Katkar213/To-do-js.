@@ -142,7 +142,7 @@ addbtn2.addEventListener(("click"),()=>{
           const markingDone = document.createElement("button");
          
           innerdiv.appendChild(para)
-          innerdiv.classList.add("space")
+          innerdiv.classList.add("space");
           
           markingDone.innerText = "Done";
           para.appendChild(title2);
